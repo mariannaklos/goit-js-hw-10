@@ -41,7 +41,7 @@ function getCountris(array) {
         Notify.info('Too many matches found. Please enter a more specific name.');
         return;
     }
-    if (array.length > 1 && array.length < 10) {
+    if (array.length > 1 && array.length <= 10) {
       createListOfCountries(array)
         return;
     }
